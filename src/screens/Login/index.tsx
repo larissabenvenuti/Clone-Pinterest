@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Alert, Image, Keyboard, TouchableWithoutFeedback, View, Text, TouchableOpacity, Dimensions } from 'react-native';
+import { Alert, Image, Keyboard, TouchableWithoutFeedback, View, Text, TouchableOpacity, Dimensions, Platform } from 'react-native';
 import { TextInputField } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { buttonStyles } from '../../components/Button/style';
 import { inputStyles } from "../../components/Input/style";
 import { styles } from "./style";
-import pinterest_banner from "../../assets/pinterest_banner.jpg";
+import pinterest_banner from "../../assets/pinterest_banner.jpeg";
 import { FontAwesome } from '@expo/vector-icons';
 
 const terms = [
@@ -31,15 +31,7 @@ export const Login = () => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={styles.containerGlobal}>
-        <View
-          style={[
-            styles.container,
-            {
-              width: '100%',
-              height: '100%',
-            },
-          ]}
-        >
+        <View style={[styles.container, { height: '100%' }]}>
           <View style={styles.banner}>
             <Image source={pinterest_banner} style={styles.bannerImage} />
           </View>

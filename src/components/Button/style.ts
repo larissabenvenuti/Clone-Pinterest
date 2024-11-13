@@ -14,7 +14,7 @@ export const buttonStyles = StyleSheet.create({
   },
   buttonText: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center', 
     justifyContent: 'center',

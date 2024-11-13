@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Dimensions, Platform } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -8,11 +8,11 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.9)',
+    backgroundColor: 'rgba(255, 255, 255, 0.9)',
   },
   banner: {
     width: '100%',
-    height: height * 0.35,
+    height: height * 0.25,
     overflow: 'hidden',
     objectFit: 'cover',
   },
@@ -23,13 +23,14 @@ export const styles = StyleSheet.create({
   logo: {
     position: 'absolute',
     textAlign: 'center',
-    marginTop: height * 0.35 - 45,
-    marginBottom: 50,
+    marginTop: height * 0.25 - 45,
+    marginBottom: Platform.OS === 'android' ? 20 : 50,
   },
   title: {
-    marginTop: 80,
+    marginTop: height * 0.1,
     fontSize: 38,
-    color: '#fff',
+    color: '#000',
+    fontWeight: '500',
     textAlign: 'center',
   },
   forms: {
@@ -43,20 +44,19 @@ export const styles = StyleSheet.create({
   },
   termsText: {
     fontSize: 14,
-    color: '#B3B3B3',
+    color: '#000',
     textAlign: 'center',
   },
   termsLink: {
     color: '#1877F2',
     textDecorationLine: 'underline',
   },
-
   containerGlobal: {
     width: '100%',
   },
   
   bannerResponsive: {
     width: '100%',
-    height: width > 500 ? height * 0.3 : height * 0.25,
+    height: width > 400 ? height * 0.25 : height * 0.15,
   },
 });
