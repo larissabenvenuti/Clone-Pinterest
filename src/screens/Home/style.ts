@@ -11,9 +11,10 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   containerImage: {
-    width: '49%',
-    marginBottom: 15,
+    width: '44%',
+    marginBottom: 5,
     position: 'relative',
+    margin: 10,
   },
   image: {
     width: '100%',
@@ -26,16 +27,17 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start', 
-    paddingLeft: 15,
+    marginTop: 0,
+    paddingLeft: 5,
   },
   username: {
     marginLeft: 10, 
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: 'bold',
     color: '#333',
   },
   points: {
-    fontSize: 30,
+    fontSize: 28,
     color: '##fff',
     marginLeft: 35,
     marginTop: 0,

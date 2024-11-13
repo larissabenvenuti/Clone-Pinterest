@@ -40,7 +40,7 @@ const Home = () => {
             />
 
             <View style={styles.userInfo}>
-              <FontAwesome name="user-circle" size={20} color="#333" />
+              <FontAwesome name="user-circle" size={18} color="#333" />
               <Text style={styles.username}>{item.username}</Text>
               <Text style={styles.points}>...</Text>
             </View>
