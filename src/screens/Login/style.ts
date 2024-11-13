@@ -1,6 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-// Obtendo a largura e altura da tela
 const { width, height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
@@ -58,6 +57,6 @@ export const styles = StyleSheet.create({
   
   bannerResponsive: {
     width: '100%',
-    height: width > 500 ? height * 0.35 : height * 0.3, // Ajusta o tamanho do banner em telas maiores e menores
+    height: width > 500 ? height * 0.3 : height * 0.25,
   },
 });

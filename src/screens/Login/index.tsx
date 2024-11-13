@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Alert, Image, Keyboard, TouchableWithoutFeedback, View, Text, TouchableOpacity, Dimensions } from 'react-native';
 import { TextInputField } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { buttonStyles } from '../../components/Button/style';
 import { inputStyles } from "../../components/Input/style";
 import { styles } from "./style";
 import pinterest_banner from "../../assets/pinterest_banner.jpg";
 import { FontAwesome } from '@expo/vector-icons';
-import { buttonStyles } from '../../components/Button/style';
 
 const terms = [
   { text: "Termos de Serviço", link: "#" },
@@ -35,8 +35,8 @@ export const Login = () => {
           style={[
             styles.container,
             {
-              width: '100%', // Ajusta para 100% da largura da tela
-              height: '100%', // Ajusta para 100% da altura da tela
+              width: '100%',
+              height: '100%',
             },
           ]}
         >
