@@ -7,10 +7,10 @@ export const styles = StyleSheet.create({
     flexWrap: 'nowrap',
     justifyContent: 'space-between',
     marginTop: 20,
-    paddingBottom: 40,
+    paddingBottom: 20,
   },
   column: {
-    width: '48%',
+    width: '50%',
     marginBottom: 20,
   },
   topMenu:{
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     right: 0,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 40,
+    marginTop: 35,
     backgroundColor: '#fff',
   },
   menuItem: {
@@ -32,18 +32,19 @@ export const styles = StyleSheet.create({
   },
   pinContainer: {
     backgroundColor: '#fff',
-    borderRadius: 10,
-    padding: 10,
+    borderRadius: 10,    
+    marginHorizontal: 5,
   },
   image: {
     width: '100%',
     borderRadius: 8,
-    marginBottom: 10,
+    marginBottom: 0,
   },  
   userInfo: {
     flexDirection: 'row', 
     alignItems: 'center',  
     marginTop: 0,
+    marginBottom: 15,
   },  
   title: {
     marginRight: 8, 
@@ -56,7 +57,7 @@ export const styles = StyleSheet.create({
   },
   points: {
     fontSize: 24,
-    marginLeft: 25,
+    marginLeft: 32,
     marginTop: 0,
     marginBottom: 30,
   },
