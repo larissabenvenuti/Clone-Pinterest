@@ -2,29 +2,28 @@ import { TextInput } from "react-native";
 import { inputStyles } from "./style";
 
 interface PropsInput {
-  propsPlaceHolder: string;
+  placeHolder: string;
   placeHolderTextColor: string;
-  propsStyle?: object;
+  style?: object;
   typeInput?: boolean;
-  valueInput: string;
-  handleFunctionInput: (value: string) => void; 
+  value: string;
+  onChangeText: (value: string) => void;
 }
 
 export const TextInputField = ({
-  propsPlaceHolder,
+  placeHolder,
   placeHolderTextColor,
-  typeInput,
-  valueInput,
-  handleFunctionInput,
-  propsStyle,
+  value,
+  onChangeText,
+  style,
 }: PropsInput) => {
   return (
     <TextInput
-      onChangeText={handleFunctionInput}
-      style={[inputStyles.input, propsStyle]}
-      placeholder={propsPlaceHolder}
-      placeholderTextColor={placeHolderTextColor}  
-      value={valueInput}
+      onChangeText={onChangeText}
+      style={[inputStyles.inputText, style]}
+      placeholder={placeHolder}
+      placeholderTextColor={placeHolderTextColor}
+      value={value}
     />
   );
 };

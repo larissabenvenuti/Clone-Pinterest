@@ -1,22 +1,15 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 export const inputStyles = StyleSheet.create({
-  input: {
-    backgroundColor: "none",
-    borderColor: "#b3b3b3",
-    borderWidth: 2,
-    marginBottom: 10,
-    paddingHorizontal: 10,
-    borderRadius: 15,
-    width: "100%",
-    height: 50,
-    paddingLeft: 10,
-  },
-
   inputText: {
+    marginTop: 15,
+    borderColor: '#333333',
+    borderWidth: 1,
+    borderRadius: 15,
+    paddingHorizontal: 15,
+    height: 50,
+    width: '100%',
+    marginBottom: 30,
     fontSize: 16,
-    fontWeight: "500",
-    color: "#ccc",
-  }
+  },
 });
-

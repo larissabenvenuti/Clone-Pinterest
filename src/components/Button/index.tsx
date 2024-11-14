@@ -5,16 +5,17 @@ import { buttonStyles } from './style';
 type PropsButton = {
   title: string | number;
   icon?: JSX.Element;
-  propsBackgroundColor: string;
-  handleFunction: () => void;
+  backgroundColor: string;
+  onPress: () => void;
+  style?: object;
 };
 
-export const Button = ({ title, icon, propsBackgroundColor, handleFunction }: PropsButton) => {
+export const Button = ({ title, icon, backgroundColor, onPress, style }: PropsButton) => {
   return (
     <TouchableOpacity
-      onPress={handleFunction}
+      onPress={onPress}
       activeOpacity={0.2}
-      style={[buttonStyles.styleButton, { backgroundColor: propsBackgroundColor }]}
+      style={[buttonStyles.styleButton, style, { backgroundColor }]}
     >
       <View style={buttonStyles.iconButtonContent}>
         {icon && <View style={{ marginRight: 10 }}>{icon}</View>}

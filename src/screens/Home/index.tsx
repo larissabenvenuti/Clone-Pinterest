@@ -112,6 +112,7 @@ const pins: PinType[] = [
 ];
 export function Home() {
   return (
+    <View style={styles.container}>
     <ScrollView>
        <View style={styles.topMenu}>
         <TouchableOpacity>
@@ -164,7 +165,9 @@ export function Home() {
         </View>
       </View>
 
-      <View style={styles.bottomMenu}>
+    </ScrollView>
+
+     <View style={styles.bottomMenu}>
         <TouchableOpacity>
           <FontAwesome name="home" size={30} color="#333" />
         </TouchableOpacity>
@@ -181,6 +184,6 @@ export function Home() {
           <FontAwesome name="user" size={30} color="#333" />
         </TouchableOpacity>
       </View>
-    </ScrollView>
+    </View>
   );
 }

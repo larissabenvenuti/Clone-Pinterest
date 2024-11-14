@@ -1,28 +1,19 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
-import {styles} from '../../screens/Home/style'
+import { View, Text, Image } from "react-native";
+import { styles } from "../../screens/Home/style";
 
-type PinProps = {
-  pin: {
-    id: string;
-    image: string;
-    title: JSX.Element;
-    username: string;
-    points: string;
-  };
-};
+interface PropsPin {
+  pinImage: string;
+  pinUsername: string;
+  pinPoints: string;
+}
 
-const Pin: React.FC<PinProps> = ({ pin }) => {
-  return (
-    <View style={styles.pinContainer}>
-      <Image source={{ uri: pin.image }} style={styles.image} />
-      <View style={styles.userInfo}>
-        <Text style={styles.username}>{pin.username}</Text>
-        <Text style={styles.points}>{pin.points}</Text>
-      </View>
-      {pin.title}
+export const Pin = ({ pinImage, pinUsername, pinPoints }: PropsPin) => (
+  <View style={styles.pinContainer}>
+    <Image source={{ uri: pinImage }} style={styles.image} />
+    <View style={styles.userInfo}>
+      <Text style={styles.username}>{pinUsername}</Text>
+      <Text style={styles.points}>{pinPoints}</Text>
     </View>
-  );
-};
-
-export default Pin;
+  </View>
+);
