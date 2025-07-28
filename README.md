@@ -8,6 +8,8 @@
 
 ##### **TypeScript**: Utilizado para adicionar tipagem estática e garantir maior segurança e escalabilidade ao código.
 
+##### **Styled Components**: Biblioteca usada para criar componentes de estilo em React Native, permitindo a estilização de maneira modular e reutilizável.
+
 ## 🔎 Funcionalidades
 ##### Tela de Login: O usuário pode acessar a tela de login, onde é possível inserir as credenciais para realizar o login no aplicativo.
 
